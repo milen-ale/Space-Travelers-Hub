@@ -1,0 +1,33 @@
+.logo{
+    width:80px;
+    height: 100px;
+    margin-right: 20px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+}
+
+.header_logo{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+a {
+    text-decoration: none;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
