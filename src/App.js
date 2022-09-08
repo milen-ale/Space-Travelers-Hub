@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Missions from './compnentes/Mission/Missions';
 import Rockets from './compnentes/Rocket/Rockets';
-import { Provider } from 'react-redux';
 import './App.css';
 import Header from './compnentes/Header/Header';
 import store from './redux/configurStore';
-
 
 function App() {
   return (

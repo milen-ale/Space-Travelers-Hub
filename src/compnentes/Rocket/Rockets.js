@@ -3,11 +3,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchRockets, bookRocket, cancelBooking } from '../../redux/Rocket/RocketReducer';
 import './Rocket.css';
 
-
 function Rockets() {
   const rockets = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
-console.log("render")
+  console.log('render');
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets);
   }, []);
