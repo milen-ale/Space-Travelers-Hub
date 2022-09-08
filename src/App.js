@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Rockets from './compnentes/Rocket/Rockets';
 import { Provider } from 'react-redux';
-import './App.css';
+import Rockets from './compnentes/Rocket/Rockets';
 import Header from './compnentes/Header/Header';
 import store from './redux/configurStore';
-
+// import Mission from './compnentes/Mission/missons';
+// import MyProfile from './compnentes/MyProfile/MyProfile';
 
 function App() {
   return (
@@ -15,6 +15,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Rockets />} />
+          {/* <Route path="/Mission-" element={<Mission />} />
+        <Route path="/MyProfile" element={<MyProfile />} /> */}
         </Routes>
       </BrowserRouter>
     </Provider>
