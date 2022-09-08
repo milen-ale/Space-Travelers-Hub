@@ -10,16 +10,9 @@
       "jsx": true
     },
     "ecmaVersion": 2018,
-    "sourceType": "module",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "projectDependencies": false
-      }
-    ]
-
+    "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended", "react-app"],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
   "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
@@ -27,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off"
   },
-  "ignorePatterns": ["dist/", "build/"]
-
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }
-
