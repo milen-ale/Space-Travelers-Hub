@@ -4,8 +4,7 @@ import { Provider } from 'react-redux';
 import Rockets from './compnentes/Rocket/Rockets';
 import Header from './compnentes/Header/Header';
 import store from './redux/configurStore';
-// import Mission from './compnentes/Mission/missons';
-// import MyProfile from './compnentes/MyProfile/MyProfile';
+import MyProfile from './compnentes/MyProfile/MyProfile';
 
 function App() {
   return (
@@ -15,8 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Rockets />} />
-          {/* <Route path="/Mission-" element={<Mission />} />
-        <Route path="/MyProfile" element={<MyProfile />} /> */}
+          <Route path="/MyProfile" element={<MyProfile />} />
         </Routes>
       </BrowserRouter>
     </Provider>

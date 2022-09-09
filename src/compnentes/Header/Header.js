@@ -5,7 +5,7 @@ import logo from './planet.png';
 
 function Header() {
   return (
-    <header className="shadow-md px-4 md:py-2 pt-2">
+    <header>
       <div className="header_logo">
         <img className="logo" src={logo} alt="logo" />
         <h2>Space Traveler&apos;s Hub</h2>
