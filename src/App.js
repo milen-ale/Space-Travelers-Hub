@@ -6,16 +6,16 @@ import Header from './compnentes/Header/Header';
 
 function App() {
   return (
-  
+
     <BrowserRouter>
-    <Header />
-    <Routes>
-<Route path = "/"element={<Rockets />} />
-{/* <Route path = "/" element={<Mission /> } />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        {/* <Route path = "/" element={<Mission /> } />
 <Route path = "/" element={< MyProfile/>} /> */}
-    </Routes>
+      </Routes>
     </BrowserRouter>
-     
+
   );
 }
 
