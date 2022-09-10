@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import './MyProfile.css';
 // import { PopulateMissionProfile } from '../../redux/mission/Mission';
 
 function Myprofile() {
-  const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rocket);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved === true);
 
