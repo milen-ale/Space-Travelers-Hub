@@ -18,8 +18,15 @@ nav {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5em;
   margin-left: auto;
+  margin-right: 40px;
+}
+
+li {
+  box-shadow: 3px 2px 3px 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 a {
