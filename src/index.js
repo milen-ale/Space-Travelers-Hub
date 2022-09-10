@@ -8,11 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-<<<<<<< HEAD
+
     {' '}
     ,
-=======
->>>>>>> 9889968b3892b27917e7b5aa30b9f0b0214ec2a7
   </React.StrictMode>,
 );
 
