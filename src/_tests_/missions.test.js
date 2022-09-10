@@ -35,6 +35,6 @@ describe('A test for missions component', () => {
       </Provider>,
     );
 
-    expect(missionTree).toMatchSnapshot(0);
+    expect(missionTree).toMatchSnapshot();
   });
 });
