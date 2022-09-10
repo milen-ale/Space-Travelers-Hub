@@ -1,3 +1,51 @@
 .App {
   text-align: center;
 }
+
+.navbar {
+  border-bottom: 3px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.title {
+  width: 32%;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h3 {
+  font-size: 2.4vw;
+}
+
+.navLogo {
+  width: 4vw;
+  height: 4vw;
+}
+
+.nav-links {
+  list-style: none;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  margin-right: 24px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.nav-links li .link {
+  text-decoration: none;
+}
+
+.nav-links li .link:hover {
+  text-decoration: underline;
+}
+
+.nav-links li .link-active {
+  text-decoration: underline;
+}
