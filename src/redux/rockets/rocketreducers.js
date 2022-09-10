@@ -1,24 +1,25 @@
-const FETCH_ROCKET = 'FETCH_ROCKET';
-const RESERVE_ROCKET = 'RESERVE_ROCKET';
-const CANCEL_ROCKET = 'CANCEL_ROCKET';
+/* eslint-disable default-param-last */
+const FETCH_ROCKETS = 'FETCH_ROCKETS';
+const RESERVATION = 'RESERVATION';
+const CANCELLATION = 'CANCELLATION';
 const rocketApi = 'https://api.spacexdata.com/v3/rockets';
 
 const fetchRockets = async (dispatch) => {
   try {
     const response = await fetch(rocketApi).then((res) => res.json());
-    dispatch({ type: FETCH_ROCKET, payload: response });
+    dispatch({ type: FETCH_ROCKETS, payload: response });
   } catch (error) {
-    console.log(error);
+    console.log(error); // eslint-disable-line 
   }
 };
 
-const bookRocket = (id) => ({
-  type: RESERVE_ROCKET,
+const bookRockets = (id) => ({
+  type: RESERVATION,
   id,
 });
 
 const cancelBooking = (id) => ({
-  type: CANCEL_ROCKET,
+  type: CANCELLATION,
   id,
 });
 
@@ -26,9 +27,9 @@ const cancelBooking = (id) => ({
 const rocketReducer = (state = [], action) => {
   let newState;
   switch (action.type) {
-    case FETCH_ROCKET:
+    case FETCH_ROCKETS:
       return action.payload;
-    case RESERVE_ROCKET:
+    case RESERVATION:
       newState = state.map((rocket) => {
         if (rocket.id === action.id) {
           return { ...rocket, reserved: true };
@@ -36,7 +37,7 @@ const rocketReducer = (state = [], action) => {
         return rocket;
       });
       return newState;
-    case CANCEL_ROCKET:
+    case CANCELLATION:
       newState = state.map((rocket) => {
         if (rocket.id === action.id) {
           return { ...rocket, reserved: false };
@@ -50,5 +51,5 @@ const rocketReducer = (state = [], action) => {
 };
 
 export {
-  fetchRockets, rocketReducer, bookRocket, cancelBooking,
+  fetchRockets, rocketReducer, bookRockets, cancelBooking,
 };
