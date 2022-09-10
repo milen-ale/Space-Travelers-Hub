@@ -9,6 +9,7 @@ function Rockets() {
 
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleBooking = (id) => {

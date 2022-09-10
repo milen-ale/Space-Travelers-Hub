@@ -12,6 +12,7 @@ function Myprofile() {
 
   useEffect(() => {
     dispatch(PopulateMissionProfile());
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const displayReservedRockets = () => {

@@ -9,6 +9,7 @@ function Mission() {
   const missions = useSelector((state) => state.missionReducer, shallowEqual);
   useEffect(() => {
     if (missions.length === 0) { dispatch(LoadMissions()); }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
