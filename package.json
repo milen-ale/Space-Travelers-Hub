@@ -3,22 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "airbnb": "^0.0.2",
+    "axios": "^0.27.2",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
     "lint": "^0.7.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx .",
+    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +50,9 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.23.0"
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
   }
 }
