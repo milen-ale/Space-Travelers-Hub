@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRockets, bookRocket, cancelBooking } from '../../redux/Rocket/RocketReducer';
-import './Rocket.css';
+import { fetchRockets, bookRockets, cancelBooking } from '../../redux/rockets/rocketreducers';
+import './rockets.css';
 
 function Rockets() {
   const rockets = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
-  console.log('render');
+
   useEffect(() => {
     if (!rockets.length) dispatch(fetchRockets);
   }, []);
 
   const handleBooking = (id) => {
-    dispatch(bookRocket(id));
+    dispatch(bookRockets(id));
   };
 
   const handleCancellation = (id) => {
