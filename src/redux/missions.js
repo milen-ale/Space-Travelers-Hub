@@ -45,6 +45,7 @@ const missionStatus = (state, id, status) => {
   return newState;
 };
 
+// eslint-disable-next-line default-param-last
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${GET_MISSIONS}/fulfilled`:

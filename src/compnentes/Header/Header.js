@@ -15,7 +15,7 @@ function Header() {
         <li key={1}><NavLink to="/">Rockets</NavLink></li>
         <li key={2}><NavLink to="/Mission">Mission</NavLink></li>
         <li key={3}><NavLink to="/MyProfile">My Profile</NavLink></li>
-      
+
       </nav>
     </header>
   );
