@@ -23,6 +23,7 @@ const cancelBooking = (id) => ({
   id,
 });
 
+// eslint-disable-next-line default-param-last
 const rocketReducer = (state = [], action) => {
   let newState;
   switch (action.type) {
