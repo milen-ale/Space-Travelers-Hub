@@ -1,7 +1,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# JavaScript-group-capstone
+# React-group-Project
 This is React-Redux space-travelrs Hub Group  project, and this project is about building a web application based on an external space x API. 
 
 ## Built With
@@ -39,14 +39,13 @@ Now you can go and play with it as you wish :smile:
 ## Authors
 👤 Mark Otuya
 
-• GitHub: @markotuya0
-
-• Twitter: @mark__anthonny
+. GitHub: [@githubhandle](https://github.com/markotuya0)
+. Twitter: [@twitterhandle](https://twitter.com/mark__anthonny)
 
 👤 Milen alen
 
-. Github: @Milen-ale
-. Twitter: @milenalebel2
+. GitHub: [@githubhandle](https://github.com/milen-ale)
+. Twitter: [@twitterhandle](https://twitter.com/milenalebe12)
 
 ## Show your support
 Give a ⭐️ if you like this project!
